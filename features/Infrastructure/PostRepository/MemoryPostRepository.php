@@ -44,10 +44,15 @@ class MemoryPostRepository implements PostRepository
     }
 
     /**
-     * @param string $author
-     * @param string $name
-     *
-     * @return Post
+     * @param Post $post
+     */
+    public function save(Post $post)
+    {
+        $this->repository->save($post);
+    }
+
+    /**
+     * {@inheritdoc}
      */
     public function findByAuthorAndName($author, $name)
     {
