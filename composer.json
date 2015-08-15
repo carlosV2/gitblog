@@ -1,6 +1,17 @@
 {
+    "name": "carlosV2/gitblog",
+    "license": "MIT",
+    "type": "project",
+    "description": "Gitblog",
+    "autoload": {
+        "psr-0": {"": ["src/", "features/"], "spec": ""}
+    },
     "require": {
-        "behat/behat": "^3.0"
+      "php": ">=5.5"
+    },
+    "require-dev": {
+        "behat/behat": "^3.0",
+        "phpspec/phpspec": "^2.2"
     },
     "config": {
         "bin-dir": "bin"
