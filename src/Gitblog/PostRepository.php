@@ -5,10 +5,10 @@ namespace Gitblog;
 interface PostRepository
 {
     /**
-     * @param string $name
      * @param string $author
+     * @param string $name
      *
      * @return Post
      */
-    public function findByNameAndAuthor($name, $author);
+    public function findByAuthorAndName($author, $name);
 }
