@@ -11,7 +11,8 @@
     },
     "require-dev": {
         "behat/behat": "^3.0",
-        "phpspec/phpspec": "^2.2"
+        "phpspec/phpspec": "^2.2",
+        "everzet/persisted-objects": "^1.0"
     },
     "config": {
         "bin-dir": "bin"
