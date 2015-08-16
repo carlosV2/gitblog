@@ -13,7 +13,7 @@ $app['gitblog.render.engine.parsedown.service'] = $app->share(function () use ($
 });
 
 $app['gitblog.render.engine.service'] = $app->share(function () use ($app) {
-    $type = ['gitblog.render.engine.type'];
+    $type = $app['gitblog.render.engine.type'];
 
     try {
         return $app['gitblog.render.engine.' . $type . '.service'];

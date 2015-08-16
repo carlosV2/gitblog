@@ -7,8 +7,8 @@ use Silex\Application;
 
 $app = new Application();
 
-require_once 'PostRepository.php';
-require_once 'RenderEngine.php';
+require 'PostRepository.php';
+require 'RenderEngine.php';
 
 $app['gitblog.post.renderer'] = $app->share(function () use ($app) {
     return new PostRenderer($app['gitblog.post.repository.service'], $app['gitblog.render.engine.service']);

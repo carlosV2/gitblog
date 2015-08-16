@@ -17,7 +17,7 @@ $app['gitblog.post.repository.flysystem.service'] = $app->share(function () use 
 });
 
 $app['gitblog.post.repository.service'] = $app->share(function () use ($app) {
-    $type = ['gitblog.post.repository.type'];
+    $type = $app['gitblog.post.repository.type'];
 
     try {
         return $app['gitblog.post.repository.' . $type . '.service'];
