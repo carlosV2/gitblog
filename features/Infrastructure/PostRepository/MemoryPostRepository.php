@@ -1,6 +1,6 @@
 <?php
 
-namespace Infrastructure;
+namespace Infrastructure\PostRepository;
 
 use Everzet\PersistedObjects\CallbackObjectIdentifier;
 use Everzet\PersistedObjects\InMemoryRepository;
